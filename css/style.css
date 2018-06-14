@@ -55,6 +55,10 @@ p{margin: 10px 0;color: #777;}
 .f-left{float: left;}
 
 .post{}
+
+#bgvid{
+	width: 100%;
+}
 .post:after, .post:before, article:after, article:before, section:after, section:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
 
 .clear{content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
@@ -94,7 +98,7 @@ body .wrap-body{}
 /* ---------------------------------------------------------------------------- */
 header{}
 header .wrap-header{}
-header .main-header{text-align: center;padding: 70px 0;background:#ffffff;}
+header .main-header{text-align: center;padding: 20px 0;background:#ffffff;}
 
 header .contact-info{padding: 0 46px 0 0;color: #acb4b6;display: inline-block;font-size: 12px;line-height: 20px;position: relative;}
 
@@ -106,7 +110,7 @@ header .contact-info::before {font-size: 23px;height: 30px;line-height: 30px;wid
 
 header #logo{}
 .head-logo{
-	height:20rem;
+	height:2rem;
 }
 @media screen and (max-width:767px){
 	header .main-header{padding-top: 50px;}
@@ -124,7 +128,7 @@ header #logo{}
 
 /* ---content-box--- */
 .content-box {}
-.content-box .wrap-box {padding:80px 10px; position: relative;}
+.content-box .wrap-box {padding:10px 10px 40px; position: relative;}
 .content-box .header {text-align: center; margin: 20px 0 70px;}
 .content-box .header h2{font-size: 37px;font-weight: bold;line-height: 1.2;color: #111;}
 .content-box .header .wrapper{padding: 5px; display: inline-block;}

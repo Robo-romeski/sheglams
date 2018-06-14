@@ -10,12 +10,12 @@ if(isset($_POST['submitcontact']))
 	$message=$_POST['message'];
 	$subject=$_POST['subject'];
 
-	$to = "youremail@gmail.com";
-	$subject = "Zerotheme - Testing Contact Form";
+	$to = "inquiries@sheglamsstudio.com";
+	$subject = "You have received a message from sheglamsstudio.com!";
 	$message = " Name: " . $name ."\r\n Email: " . $email . "\r\n Message:\r\n" . $message;
 	 
 	$from = "Zerotheme.com";
-	$headers = "From:" . $from . "\r\n";
+	$headers = "From:" . $email . "\r\n";
 	$headers .= "Content-type: text/plain; charset=UTF-8" . "\r\n"; 
 	 
 	if(@mail($to,$subject,$message,$headers))
@@ -235,10 +235,10 @@ if(isset($_POST['submitcontact']))
 			</div>
 			<div class="copyright">
 				<div class="zerogrid wrapper">
-					Copyright @ zHairSalon - Desigend by <a href="https://www.zerotheme.com" title="free website templates">ZEROTHEME</a>
+					Copyright @ Everything Glam Hair Studio
 					<ul class="quick-link">
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Terms of Use</a></li>
+						<!-- <li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms of Use</a></li> -->
 					</ul>
 				</div>
 			</div>
