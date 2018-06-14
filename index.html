@@ -27,15 +27,15 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/menu.css">
 	<link rel="stylesheet" href="css/lightbox.css">
-	<!-- <link rel="stylesheet" href="css/instafeed.css"> -->
 	
 
 	
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	
 	<!-- <script src="js/jquery-2.1.1.js"></script> -->
-	<script src="js/script.js"></script>
+	<!-- <script src="js/script.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
 	
 	<!--[if lt IE 8]>
@@ -49,9 +49,50 @@
 		<script src="js/html5.js"></script>
 		<script src="js/css3-mediaqueries.js"></script>
 	<![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(450).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+    //]]>
+</script>
+<style>
+  body {
+    overflow: hidden;
+}
+/* Preloader */
+#preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:purple; /* change if the mask should have another color then white */
+    z-index:9999; /* makes sure it stays on top */
+}
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(assets/img/box.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+</style>
     
 </head>
 <body>
+		<div id="preloader">
+				<div id="status" class="animated infinite wobble"><h1 style="color:white;">Loading!</h1></div>
+			</div>
+
 <div class="wrap-body">
 
 <!--////////////////////////////////////Header-->
@@ -508,74 +549,8 @@
 
 	<!-- Light Box -->
 	<!-- <script src="js/lightbox-plus-jquery.min.js"></script> -->
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/lightbox.js"></script>
 	<script src="js/instafeed.js"></script>
-	
-	<!-- Google Map -->
-	<script>
-	  var marker;
-	  var image = 'images/map-marker.png';
-      function initMap() {
-        var myLatLng = {lat: 39.79, lng: -86.14};
-
-		// Specify features and elements to define styles.
-        var styleArray = [
-          {
-            featureType: "all",
-            stylers: [
-             { saturation: -80 }
-            ]
-          },{
-            featureType: "road.arterial",
-            elementType: "geometry",
-            stylers: [
-              { hue: "#000000" },
-              { saturation: 50 }
-            ]
-          },{
-            featureType: "poi.business",
-            elementType: "labels",
-            stylers: [
-              { visibility: "off" }
-            ]
-          }
-        ];
-		
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: myLatLng,
-          scrollwheel: false,
-		   // Apply the map style array to the map.
-          styles: styleArray,
-          zoom: 7
-        });
-
-        var directionsDisplay = new google.maps.DirectionsRenderer({
-          map: map
-        });
-
-		// Create a marker and set its position.
-        marker = new google.maps.Marker({
-          map: map,
-		  icon: image,
-		  draggable: true,
-          animation: google.maps.Animation.DROP,
-          position: myLatLng
-        });
-		marker.addListener('click', toggleBounce);
-      }
-	  
-	  function toggleBounce() {
-        if (marker.getAnimation() !== null) {
-          marker.setAnimation(null);
-        } else {
-          marker.setAnimation(google.maps.Animation.BOUNCE);
-        }
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7V-mAjEzzmP6PCQda8To0ZW_o3UOCVCE&callback=initMap" async defer></script>
-	
 	<!-- carousel -->
 	<script src="owl-carousel/owl.carousel.js"></script>
     <script>

@@ -9,7 +9,7 @@ var galleryFeed = new Instafeed({
     template: 
       '<div class="">'+
       '<div class="portfolio-box zoom-effect">'+
-          '<img src="{{image}}" class="img-responsive pict" alt="">'+
+          '<img src="{{image}}" class="img-responsive" alt="">'+
           '<div class="portfolio-box-caption">'+
              '<div class="portfolio-box-caption-content">'+
                   '<div class="project-name">'+
