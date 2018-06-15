@@ -28,7 +28,8 @@
   margin: 0;
   padding: 0;
   display: block;
-  position: relative;
+  vertical-align: sub;
+  /* position: relative; */
 }
 #cssmenu ul li a {
   text-decoration: none;

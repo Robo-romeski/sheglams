@@ -421,3 +421,47 @@ textarea {display:block;width:100%;height:200px;background-color:#F3F3F3; color:
 	color: white;
 	padding: 30px;
 }
+
+.snap{
+background-color: purple; 
+color: white; 
+height: 40px; 
+text-transform: uppercase; 
+font-family: 'Square Market', 'helvetica neue', helvetica, arial, sans-serif; 
+letter-spacing: 1px; 
+line-height: 38px; 
+padding: 0 28px; 
+border-radius: 8px; 
+font-weight: 500; 
+font-size: 14px; 
+cursor: pointer; 
+display: inline-block;
+transition: all 1s;
+}
+
+.snap:hover {
+	background-color: white;
+	color: purple;
+	border-radius: 0px;
+ }
+
+ .socials {
+	position: relative;
+    background-color: #333;
+	white-space: nowrap;
+	float: right;
+}
+
+.socials a {
+    display: inline-block;
+    /* color: white; */
+    padding: 20px;
+    text-decoration: none;
+}
+.socials a i {
+	color: white;
+}
+
+.socials a:hover {
+    background-color: #777;
+}
