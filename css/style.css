@@ -132,8 +132,8 @@ header #logo{}
 }
 
 @media screen and (min-width:1077px){
-	#owl-slide{
-		display: none!important;
+	.headline{
+		display: none;
 	}
 }
 .pict{
