@@ -83,7 +83,7 @@ hr{ margin: 20px auto 0; padding: 0; max-width: 210px;border: 0; border-top: dou
 
 hr.line01:after, 
 hr.line02:after,
-hr.line03:after{content: url(../images/rose.png);display: inline-block;position: relative;top: -12px;padding: 0 10px;}
+hr.line03:after{display: inline-block;position: relative;top: -12px;padding: 0 10px;}
 
 hr.line01 {border-color: #111;}
 hr.line01:after {color: #111;background-color: #F7F7F7;}
