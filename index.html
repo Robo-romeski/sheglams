@@ -52,58 +52,11 @@
 	<![endif]-->
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-	<!-- Preloader -->
-	<script type="text/javascript">
-		//<![CDATA[
-		$(window).load(function () { // makes sure the whole site is loaded
-			$('#status').fadeOut(); // will first fade out the loading animation
-			$('#preloader').delay(450).fadeOut('slow'); // will fade out the white DIV that covers the website.
-			$('body').delay(350).css({ 'overflow': 'visible' });
-		})
-    //]]>
-	</script>
-	<style>
-		body {
-			overflow: hidden;
-		}
 
-		/* Preloader */
-
-		#preloader {
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-color: purple;
-			/* change if the mask should have another color then white */
-			z-index: 9999;
-			/* makes sure it stays on top */
-		}
-
-		#status {
-			width: 200px;
-			height: 200px;
-			position: absolute;
-			left: 50%;
-			/* centers the loading animation horizontally one the screen */
-			top: 50%;
-			/* centers the loading animation vertically one the screen */
-			background-repeat: no-repeat;
-			background-position: center;
-			margin: -100px 0 0 -100px;
-			/* is width and height divided by two */
-		}
-	</style>
 
 </head>
 
 <body>
-	<div id="preloader">
-		<div id="status" class="animated infinite wobble">
-			<h1 style="color:white;">LOADING!</h1>
-		</div>
-	</div>
 
 	<div class="wrap-body">
 
@@ -127,15 +80,6 @@
 						</div>
 					</ul>
 				</div>
-				<!---EGLAM Video-->
-				<!-- <div id="owl-slide" class="owl-carousel owl-theme">
-					
-					 <div class="item"><img src="img/glam-one.png" alt="#sheglams"></div>
-					 <div class="item"><img src="img/glam-three.png" alt="#sheglams"></div>
-					 <div class="item"><img src="img/glam-four.png" alt="#sheglams"></div>
-					 <div class="item"><img src="img/glam-two.png" alt="#sheglams"></div>
-					 <div class="item"><img src="img/glam-five.png" alt="#sheglams"></div>
-				   </div> -->
 				   <div class="headline"> <img id="bgvid" src="images/sheglams.gif" alt=""></div>
 				<div class="bgvid">
 					<div id="video_box">
@@ -170,11 +114,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- <video autoplay loop id="bgvid"> -->
-						<!-- <source src="sheglams.mp4" type="video/mp4"> -->
-						<!-- <source src="movie.ogg" type="video/ogg"> -->
-						<!-- Your browser does not support the video tag. -->
-					<!-- </video> -->
 					<img id="bgvid" src="images/sheglams.gif" alt="">
 				</div>
 
