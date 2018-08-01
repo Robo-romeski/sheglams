@@ -3,7 +3,7 @@ Zerotheme.com | Free Html5 Responsive Templates
 Author URI: https://www.zerotheme.com/
 */
 
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
+@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:700|Merriweather:400,700);
 /* ---------------------------------------------------------------------------- */
 /* ------------------------------------Reset----------------------------------- */
 /* ---------------------------------------------------------------------------- */
@@ -66,6 +66,10 @@ p{margin: 10px 0;color: #777;}
 
 #bgvid{
 	width: 100%;
+}
+
+.quality{
+	font-family: 'Cinzel Decorative', cursive;
 }
 .post:after, .post:before, article:after, article:before, section:after, section:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
 
