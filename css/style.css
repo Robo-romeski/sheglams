@@ -449,6 +449,10 @@ div.row > p {
 	margin: 0 auto;
 }
 
+.mainHead{
+	max-width: 75%;
+}
+
 .snap{
 background-color: purple; 
 color: white; 
